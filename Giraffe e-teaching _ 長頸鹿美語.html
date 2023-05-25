@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://get.giraffe.com.cn/kidsapp/ -->
+<html lang="zh-Hant-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" lang="EN" content="">
+<meta name="keywords" lang="zh-TW" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:title" content="Giraffe e-teaching | 長頸鹿美語">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./images/web_sns.jpg">
+<meta property="og:description" content="幼兒長頸鹿美語教學系統！一同感受更完整、更系統、更有趣的 e-teaching！">
+<meta name="description" content="幼兒長頸鹿美語教學系統！一同感受更完整、更系統、更有趣的 e-teaching！">
+<link rel="image_src" type="image/jpeg" href="https://get.giraffe.com.cn/kidsapp/images/web_sns.jpg">
+<title>Giraffe e-teaching | 長頸鹿美語</title>
+<link rel="apple-touch-icon" sizes="144x144" href="https://get.giraffe.com.cn/kidsapp/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://get.giraffe.com.cn/kidsapp/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://get.giraffe.com.cn/kidsapp/images/icons/favicon-16x16.png">
+<link rel="shortcut icon" href="https://get.giraffe.com.cn/kidsapp/images/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-config" content="./images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" type="text/css" rev="stylesheet" media="screen" href="./Giraffe e-teaching _ 長頸鹿美語_files/reset.css">
+<link rel="stylesheet" type="text/css" rev="stylesheet" media="screen" href="./Giraffe e-teaching _ 長頸鹿美語_files/swiper.min.css">
+<link rel="stylesheet" href="./Giraffe e-teaching _ 長頸鹿美語_files/jquery.fancybox.min.css">
+<link rel="stylesheet" type="text/css" rev="stylesheet" media="screen" href="./Giraffe e-teaching _ 長頸鹿美語_files/animate.css">
+<link rel="stylesheet" type="text/css" rev="stylesheet" media="screen" href="./Giraffe e-teaching _ 長頸鹿美語_files/app.css">
+<link rel="stylesheet" type="text/css" rev="stylesheet" media="screen" href="./Giraffe e-teaching _ 長頸鹿美語_files/kidapp.css">
+<link href="./Giraffe e-teaching _ 長頸鹿美語_files/jquery.virtual_keyboard.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./Giraffe e-teaching _ 長頸鹿美語_files/login.css"></head>
+<body>
+<div id="wrapper" class="wrapper">
+<div id="root" class="root" style="zoom: 1; transform: translate3d(-50.1%, -50.1%, 0px) scale(2.43056, 2.43056); touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+<div id="loading" class="loading">
+<div class="spin">
+<span></span>
+<p>Ready</p>
+</div>
+</div>
+<div id="basic-tools" class="basic-tools">
+<span id="fullscreen" class="fullscreen wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"></span>
+<span id="return" class="return wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;"></span>
+<span id="lines" class="lines"></span>
+<span id="sizer" class="sizer wow fadeIn lock animated" style="visibility: visible; animation-name: fadeIn;">
+<span id="sizer_dragger" class="sizer_dragger">x 1</span>
+</span>
+<span id="power" class="power wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+<span id="confirm-power" class="confirm-power wow rotateInUpRight animated" data-wow-duration=".5s" style="visibility: visible; animation-duration: 0.5s; animation-name: rotateInUpRight;">
+<span id="backToGEO"></span>
+</span>
+</span>
+</div>
+<div id="units" class="units wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+<ul id="icon-wrapper" class="icon-wrapper"></ul>
+<div onclick="removeUnits(1)" class="overlay"></div>
+</div>
+<div id="widget" class="widget" zindex="2"></div>
+<div id="kw" class="kw"></div>
+<div id="canvas-board" class="canvas-board" zindex="2" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+<span id="cbg" class="canvas-btn-group" onclick="groupCanvas()"></span>
+<span id="cba" class="canvas-btn-apart" onclick="apartCanvas()"></span>
+</div>
+<div id="lines_board" class="lines_board">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="main" class="main"><div id="login_wrapper" class="login_wrapper loaded">
+<div class="login-container wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+<span class="logo wow float animated" data-wow-iteration="infinite" data-wow-duration="2s" data-wow-delay="-1s" style="visibility: visible; animation-duration: 2s; animation-delay: -1s; animation-iteration-count: infinite; animation-name: float;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_logo2.png"></span>
+<span id="ok" onclick="ok()"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_icon2.png"><b>当前ip不在使用范围内</b></span>
+<span class="error"></span>
+<span class="input">
+USER NAME <input type="text" name="username"> PASSWORD
+<input type="password" name="password" id="password">
+<span class="showpw"></span>
+</span>
+<span class="login-panel"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_bk2.png"></span>
+<span class="giraffe wow bounceIn animated" style="visibility: visible; animation-name: bounceIn;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_giraffe.png"></span>
+<span class="et1 wow float animated" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-iteration-count: infinite; animation-name: float;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_1.png"></span>
+<span class="et3 wow float animated" data-wow-iteration="infinite" data-wow-duration="2s" data-wow-delay="-1s" style="visibility: visible; animation-duration: 2s; animation-delay: -1s; animation-iteration-count: infinite; animation-name: float;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_3.png"></span>
+<span class="et4 wow float animated" data-wow-iteration="infinite" data-wow-duration="2s" data-wow-delay="-1s" style="visibility: visible; animation-duration: 2s; animation-delay: -1s; animation-iteration-count: infinite; animation-name: float;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_4.png"></span>
+<span class="et5 wow float animated" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-iteration-count: infinite; animation-name: float;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_5.png"></span>
+<span class="et6 wow float animated" data-wow-iteration="infinite" data-wow-duration="2s" data-wow-delay="-1s" style="visibility: visible; animation-duration: 2s; animation-delay: -1s; animation-iteration-count: infinite; animation-name: float;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_6.png"></span>
+<span class="et7 wow float animated" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-iteration-count: infinite; animation-name: float;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_7.png"></span>
+<span class="rocket wow float animated" data-wow-iteration="infinite" data-wow-duration="2s" data-wow-delay="-1s" style="visibility: visible; animation-duration: 2s; animation-delay: -1s; animation-iteration-count: infinite; animation-name: float;"><img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_rocket.png"></span>
+<span class="copyright">長頸鹿美語 版權所有 Giraffe All Rights Reserved.</span>
+</div>
+<div class="assetsPreload">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_1.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_2.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_3.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_4.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_5.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_6.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_7.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_rocket.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_giraffe.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_bk2.png">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/et_icon2.png">
+</div>
+</div></div>
+<div id="bulbBG" class="bulbBG"></div>
+</div>
+<div class="assetsPreload">
+<img src="./Giraffe e-teaching _ 長頸鹿美語_files/spinner.png">
+</div>
+</div>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/jquery-3.1.1.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/lowLag.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/hammer.min.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/html2canvas.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/swiper.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/jquery.wow.min.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/jquery.fancybox.min.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/app.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/appadd.js.下载"></script>
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/jquery.virtual_keyboard.js.下载"></script>
+
+<script src="./Giraffe e-teaching _ 長頸鹿美語_files/login.js.下载"></script></body></html>

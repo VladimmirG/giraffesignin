@@ -1,0 +1,60 @@
+var Picsizereset=function (Did,img){
+    var getelem=Did;
+    var getelemImg=Did;
+    
+    if(img!=undefined){
+        getelemImg=img;
+      }
+
+    $(getelemImg).on('load', function () {
+          var startS = $('#root').height(); //畫面大小
+          var start2 = $('#root').height() - ($("#panel").height()); //顯示區塊 (排除工具列)
+          
+          var PicSize = $(getelemImg).height() //圖片原始高 
+          var resetSize = start2 / PicSize;
+          $(getelem).css('transform', 'scale(' + resetSize + ')')
+    
+          console.log('getelemImg=',getelemImg,'startS=',startS,' PicSize=',PicSize,' resetSize',resetSize)
+
+          var startSW= $('#root').width(); //畫面大小
+          var PicSizeW = Math.round($(getelem).width())
+          var pdleft=Math.round((startSW-PicSizeW)/2)/stageRatio;
+          $(getelem).css('left', pdleft+'px')
+
+          // $(".ABC_wrapper_GG .contents").css({
+          //   width:PicSizeW,
+          //   height:start2
+          // })
+    })  
+  }
+
+
+  var ETaudioPlay = function (AudioNum) {
+    ETaudiostop()
+    var audioEle = $(AudioNum)[0];
+    audioEle.pause();
+    audioEle.play();
+  }
+  
+  var ETaudiostop = function () {
+    $('audio').each(function () {
+        this.pause(); // Stop playing
+        this.currentTime = 0; // Reset time
+    });
+  }
+
+
+  function chr(uni) {
+    //console.log('uni=',uni)
+    if (String.fromCodePoint) return String.fromCodePoint(uni); // ES6
+    if (uni <= 0xffff) return String.fromCharCode(uni);
+    return String.fromCharCode(0xd800 | (((uni - 0x10000) >> 10) & 0x03ff), // UTF-16 surrogate pairs
+        0xdc00 | ((uni - 0x10000) & 0x03ff));
+}
+
+var vsbase = 0xe01e0;
+var CHANGEfont = function(id,word,fontNo) {
+    $(id).text(word);
+    //console.log($(id).text(word),vsbase , fontNo)
+    $(id).text($(id).text() + chr(vsbase + fontNo))
+}
